@@ -34,7 +34,9 @@ public class ElasticController {
     private ResponseEntity<?> getKubernetes(){
 
         response.clear();
-        response.put("KUBERNETES_SERVICE_HOST: ", readEnvVar.getKube());
+        response.put("KUBERNETES_SERVICE_HOST: ", readEnvVar.getKube()[0]);
+        response.put("KUBERNETES_SERVICE_PORT: ", readEnvVar.getKube()[1]);
+        response.put("KUBERNETES_SERVICE_PORT_HTTPS: ", readEnvVar.getKube()[2]);
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }

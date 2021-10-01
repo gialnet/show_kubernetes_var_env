@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.redmoon</groupId>
     <artifactId>show_kubernetes_var_env</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>show_kubernetes_var_env</name>
     <description>show_kubernetes_var_env</description>
     <properties>
