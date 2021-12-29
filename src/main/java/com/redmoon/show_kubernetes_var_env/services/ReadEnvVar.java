@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ReadEnvVar {
 
-    @Value("${ES_JAVA_HOME:No set jet}")
+    @Value("${KUBERNETES_SERVICE:No set jet}")
     private String es_java;
 
     @Value("${KUBERNETES_SERVICE_HOST:No set jet}")
